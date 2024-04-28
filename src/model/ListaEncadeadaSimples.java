@@ -39,7 +39,7 @@ public class ListaEncadeadaSimples<T> {
 			return index;
 		}
 		No<T> buffer = this.inicio;
-		while (buffer != null) {
+		while (buffer.getProximo() != null) {
 			index++;
 			buffer = buffer.getProximo();
 			if (buffer.getValor() == elemento) {
@@ -58,7 +58,6 @@ public class ListaEncadeadaSimples<T> {
 				this.inicio = novo;
 			} else {
 				this.inicio = novo;
-				novo.setProximo(null);
 			}
 		} else {
 			this.insert( this.get(--index) , elemento );

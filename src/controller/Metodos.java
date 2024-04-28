@@ -14,12 +14,16 @@ public class Metodos {
 		lista.append(6);
 		
 		System.out.println(lista.toString());		
-		lista.remove(0);		
-		System.out.println(lista.toString());		
-		lista.remove(1);		
-		System.out.println(lista.toString());
-		lista.insert(1, 9);
-		System.out.println(lista.toString());
+
+		lista.insert(0, 1);
+		
+		System.out.println(lista.toString());	
+		
+		System.out.println(lista.total());
+		
+		lista.remove(3);
+		System.out.println(lista.toString());	
+
 
 	}
 }
